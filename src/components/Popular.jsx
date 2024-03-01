@@ -15,8 +15,10 @@ const Popular = () => {
 
   return (
     <div className=" mb-20">
-      <ContentWrapper className=" flex justify-between items-center mb-5">
-        <span className="text-3xl  font-light ">What's Popular</span>
+      <ContentWrapper className=" flex flex-col sm:flex-row justify-between items-center mb-5">
+        <span className="text-3xl mb-5 sm:mb-0  font-light ">
+          What's Popular
+        </span>
         <SwitchTabs data={["Movies", "TV Shows"]} onTabChange={onTabChange} />
       </ContentWrapper>
       <Carousel

@@ -15,8 +15,8 @@ const TopRated = () => {
 
   return (
     <div className=" mb-20">
-      <ContentWrapper className=" flex justify-between items-center mb-5">
-        <span className="text-3xl  font-light ">Top Rated</span>
+      <ContentWrapper className=" flex  flex-col sm:flex-row justify-between items-center mb-5">
+        <span className="text-3xl mb-5 sm:mb-0 font-light ">Top Rated</span>
         <SwitchTabs data={["Movies", "TV Shows"]} onTabChange={onTabChange} />
       </ContentWrapper>
       <Carousel

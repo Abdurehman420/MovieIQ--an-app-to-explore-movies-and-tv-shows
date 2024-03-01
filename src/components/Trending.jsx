@@ -14,8 +14,8 @@ const Trending = () => {
   };
   return (
     <div className=" mb-20">
-      <ContentWrapper className=" flex justify-between items-center mb-5">
-        <span className="text-3xl  font-light ">Trending</span>
+      <ContentWrapper className=" flex flex-col sm:flex-row  justify-between items-center mb-5">
+        <span className="text-3xl mb-5 sm:mb-0 font-light ">Trending</span>
         <SwitchTabs data={["Day", "Week"]} onTabChange={onTabChange} />
       </ContentWrapper>
       <Carousel data={data?.results} loading={isLoading} />

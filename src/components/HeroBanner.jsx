@@ -45,17 +45,17 @@ const HeroBanner = () => {
           <p className=" text-center text-md md:text-2xl">
             Millions of movies, TV shows and people to discover. Explore now.
           </p>
-          <div className=" flex justify-center  w-2/3  ">
+          <div className=" flex flex-col sm:flex-row justify-center   w-full  md:w-1/2 ">
             <input
               type="text"
-              className=" border-none px-6 py-2 bg-white outline-none flex-1 text-lg  rounded-l-sm text-gray-600"
+              className=" border-none px-3 md:px-6 py-2 bg-white outline-none flex-1 text-lg  rounded-lg sm:rounded-sm  sm:rounded-l-sm text-gray-600"
               placeholder="Search for a movie"
               onKeyUp={searchQueryHandler}
               onChange={(e) => setQuery(e.target.value)}
             />
             <button
               onClick={() => navigate(`/search/${query}`)}
-              className=" bg-lightBlue  text-slate-100 px-6 py-2 rounded-sm rounded-l-none border-none text-lg  hover:bg-lightBlue/90  duration-200 cursor-pointer"
+              className=" bg-lightBlue  w-1/2 mx-auto mt-3 sm:mt-0    sm:w-auto text-slate-100 px-2 md:px-6 py-2 rounded-lg sm:rounded-sm sm:rounded-l-none border-none text-lg  hover:bg-lightBlue/90  duration-200 cursor-pointer"
             >
               Search
             </button>
